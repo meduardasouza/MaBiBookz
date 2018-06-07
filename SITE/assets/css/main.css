@@ -3387,7 +3387,7 @@
 		}
 
 		#banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
-			color: #fff;
+			color: White;
 		}
 
 		#banner blockquote {
@@ -3747,6 +3747,7 @@
 		color: #f2a3a5;
 		padding: 4em 0 2em 0;
 		background: #e5474b;
+		text-align: center;
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -3917,7 +3918,7 @@
 		}
 
 		#footer .inner {
-			max-width: 65em;
+			max-width: 35em;
 			width: calc(100% - 6em);
 			margin: 0 auto;
 		}
@@ -3956,3 +3957,21 @@
 			}
 
 		}
+
+
+.circle {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  margin-right: -200px;
+}
+
+.circle img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
