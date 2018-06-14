@@ -14,17 +14,8 @@
 	<body>
 
 		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="home.html" class="logo">MaBiBookz</a>
-					<nav id="nav">
-						<a href="home.html"> Página Inicial </a>
-			            <a href="perfil.html">Perfil</a>
-			            <a href="info.html"> Nosso Objetivo</a>
-			            <a href="index.html">Sair</a>
-					</nav>
-				</div>
-			</header>
+      <?php include ("cabeçalhopi.html") ?>
+
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
 		<!-- Main -->
@@ -43,19 +34,7 @@
 			</section>
 
 
-      <section id="footer">
-        <div class="inner">
-          <div class="copyright">
-            &copy; Maria Eduarda e Bianka. | Inspirado no Templated
-          </div>
-        </div>
-        <br>
-                  <ul class="icons">
-                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                  </ul>
-      </section>
+      <?php include ("rodape.html") ?>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

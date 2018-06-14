@@ -14,12 +14,7 @@
 	<body>
 
 		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="index.html" class="logo">MaBiBookz</a>
-				</div>
-			</header>
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+      <?php include ("cabeçalhosc.html") ?>
 
 		<!-- Main -->
 			<section id="main">
@@ -28,7 +23,7 @@
 						<!-- Form -->
 						<section>
 							<h3>Cadastro</h3>
-						</section>		
+			</section>		
 <!-- Footer -->
 <script type="text/javascript">
 function validaCampo()
@@ -192,24 +187,12 @@ return true;
           <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
          </p>
       <p>           <span class="style1">* Campos com * são obrigatórios!          </span> </p></td>
-      <h5> <a href="login.html"> Já tem cadastro? Faça login! </a> </h5>
+      <h5> <a href="login.php"> Já tem cadastro? Faça login! </a> </h5>
     </tr>
   </table>
 </form>
 
-      <section id="footer">
-        <div class="inner">
-          <div class="copyright">
-            &copy; Maria Eduarda e Bianka. | Inspirado no Templated
-          </div>
-        </div>
-        <br>
-                  <ul class="icons">
-                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                  </ul>
-      </section>
+      <?php include ("rodape.html") ?>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

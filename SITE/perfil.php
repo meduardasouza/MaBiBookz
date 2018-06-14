@@ -14,18 +14,7 @@
 	<body>
 
 		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="home.html" class="logo">MaBiBookz</a>
-					<nav id="nav">
-						<a href="home.html"> Página Inicial </a>
-			            <a href="info.html"> Nosso Objetivo</a>
-			            <a href="index.html">Sair</a>
-					</nav>
-				</div>
-			</header>
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-
+      <?php include ("cabeçalhoperfil.html") ?>
 			<section>
 							<br>
 							<br>
@@ -51,26 +40,19 @@
 		<table width="625" border="0">
 		    <tr>
 		      <td width="69">Dom Casmurro</td>
-		      <td> <a href="doardc.html" > Clique para doar. </a> </td>
+		      <td> <a href="doardc.php" > Clique para doar. </a> </td>
 		    </tr>
 		    <tr>
 		      <td width="69"> A Garota no Trem</td>
-		      <td> <a href="doarag.html" > Clique para doar. </a> </td>
+		      <td> <a href="doarag.php" > Clique para doar. </a> </td>
 		    </tr>
 		</table>
 			</section>
 
-	  <section id="footer">
-        <div class="inner">
-          <div class="copyright">
-            &copy; Maria Eduarda e Bianka. | Inspirado no Templated
-          </div>
-        </div>
-                  <ul class="icons">
-                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                  </ul>
-      </section>
+	        <?php include ("rodape.html") ?>
+      		<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 	</body>
 </html>
