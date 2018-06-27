@@ -1,12 +1,12 @@
 <?php
 
 	$con = mysqli_connect('127.0.0.1','root', 'root');
-	//Coloca os coisas ali...No meio de '' coloquem a "root"...Isso se vocês estiverem no pc da escola
+
 	if(!$con)
 	{
 		echo 'deu ruim';
 	}
-	//Coloquem o nome do BD que esta entre "test";
+
 	if(!mysqli_select_db($con, 'MaBiBookz'))
 	{
 		echo 'BD não selecionado';
@@ -37,6 +37,4 @@
 	
 	//header("refresh:;2 url=inicio.html");
 
-	//By volei y google
-	
 ?>
