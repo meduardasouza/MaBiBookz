@@ -14,12 +14,16 @@
 	//Criem strings e coloquem o mesmo nome do BD
 	$nome = $_POST['nome_compl'];
 	$email = $_POST['email'];
+	$telefone = $_POST['telefone'];
+	$logradouro = $_POST['logradouro'];
+	$DDD = $_POST['ddd'];
 	$senha = $_POST['senha'];
+
 	
 
 	
 	//coloquem o nome da tabela que quer cadastrar depois de usuario e depois os nomes das strings e depois de VALUES coloquem as strings criadas
-	$sql = "INSERT INTO usuario (nome_compl, email, senha ) VALUES ('$nome', '$email', '$senha')";
+	$sql = "INSERT INTO usuario (nome_compl, email, senha, telefone, ddd, logradouro ) VALUES ('$nome', '$email', '$senha', '$telefone', '$DDD', '$logradouro')";
 	
 	if(!mysqli_query($con,$sql))
 	{
