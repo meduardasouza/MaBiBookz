@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Introspect by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 	<head>
 		<title>Cadastro</title>
@@ -92,7 +88,7 @@ return true;
   <table width="625" border="0">
     <tr>
       <td width="69">Nome ou Instituição:</td>
-      <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="500" />
+      <td width="546"><input name="nome_compl" type="text" id="nome" size="70" maxlength="500" />
         <span class="style1">*</span></td>
     </tr>
       <td>Email:</td>
