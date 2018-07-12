@@ -37,6 +37,7 @@
 	</div>
 
 	<h3> Lista de Desejos </h3>
+	<h5> <a href="cadastrolivro.php" > Clique para cadastrar um livro novo. </a> </h5>
 		<table width="625" border="0">
 		    <tr>
 		      <td width="69">Dom Casmurro</td>
