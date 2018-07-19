@@ -1,5 +1,9 @@
 <!DOCTYPE HTML>
-
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
 	<head>
 		<title>Cadastro</title>
@@ -110,8 +114,13 @@ return true;
       <td><input name="telefone" type="text" id="telefone"/> </td>
     </tr>
     <tr>
-      <td>Endereço:</td>
-      <td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" />
+      <td>Rua:</td>
+      <td><input name="rua" type="text" id="rua" maxlength="20" />
+        <span class="style1">*</span></td>
+    </tr>
+    <tr>
+      <td>Bairro:</td>
+      <td><input name="bairro" type="text" id="bairro" maxlength="20" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
@@ -119,7 +128,7 @@ return true;
       <td><input name="cidade" type="text" id="cidade" maxlength="20" />
         <span class="style1">*</span></td>
     </tr>
-    <tr>
+            <tr>
       <td>Estado:</td>
       <td><select name="estado" id="estado">
         <option>Selecione...</option>
@@ -153,18 +162,8 @@ return true;
         <span class="style1">*      </span></td>
     </tr>
     <tr>
-      <td>Bairro:</td>
-      <td><input name="bairro" type="text" id="bairro" maxlength="20" />
-        <span class="style1">*</span></td>
-    </tr>
-    <tr>
-      <td>País:</td>
-      <td><input name="pais" type="text" id="pais" maxlength="20" />
-        <span class="style1">*</span></td>
-    </tr>
-    <tr>
       <td>Usuário:</td>
-      <td><input name="login" type="text" id="login" maxlength="12" />
+      <td><input name="idlogin" type="text" id="idlogin" maxlength="12" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
