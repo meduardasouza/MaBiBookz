@@ -79,7 +79,7 @@ else
 if(document.cadastro.senha.value=="")
 {
 alert("Digite uma senha!");
-return false;
+return false; 
 }
 else
 return true;
@@ -195,4 +195,5 @@ return true;
 			<script src="assets/js/main.js"></script>
 
 	</body>
+  <!-- to commit -->
 </html>
