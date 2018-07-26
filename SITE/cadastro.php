@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -66,6 +67,8 @@ echo "Seu cadastro foi realizado com sucesso!Agradecemos a atenção.";
 </body>
 </html>
 =======
+=======
+>>>>>>> 13d940e665164d45bf6ac62124049729f7fad41d
 <?php
 
 	$con = mysqli_connect('127.0.0.1','root', 'root');
@@ -106,4 +109,7 @@ echo "Seu cadastro foi realizado com sucesso!Agradecemos a atenção.";
 	//header("refresh:;2 url=inicio.html");
 
 ?>
+<<<<<<< HEAD
+>>>>>>> 13d940e665164d45bf6ac62124049729f7fad41d
+=======
 >>>>>>> 13d940e665164d45bf6ac62124049729f7fad41d
