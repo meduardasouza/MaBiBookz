@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
--- https://www.phpmyadmin.net/
+-- version 4.5.4.1deb2ubuntu2
+-- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: 13-Jun-2018 às 22:42
--- Versão do servidor: 10.1.32-MariaDB
--- PHP Version: 7.2.5
+-- Host: localhost
+-- Tempo de geração: 05/07/2018 às 08:45
+-- Versão do servidor: 5.7.18-0ubuntu0.16.04.1
+-- Versão do PHP: 7.0.18-0ubuntu0.16.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `aleatorio`
+-- Banco de dados: `MaBiBookz`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `contacta`
+-- Estrutura para tabela `contacta`
 --
 
 CREATE TABLE `contacta` (
@@ -39,7 +37,7 @@ CREATE TABLE `contacta` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `doacao`
+-- Estrutura para tabela `doacao`
 --
 
 CREATE TABLE `doacao` (
@@ -51,7 +49,7 @@ CREATE TABLE `doacao` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `envio`
+-- Estrutura para tabela `envio`
 --
 
 CREATE TABLE `envio` (
@@ -63,7 +61,7 @@ CREATE TABLE `envio` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `instituicao`
+-- Estrutura para tabela `instituicao`
 --
 
 CREATE TABLE `instituicao` (
@@ -79,7 +77,7 @@ CREATE TABLE `instituicao` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `livros`
+-- Estrutura para tabela `livros`
 --
 
 CREATE TABLE `livros` (
@@ -92,7 +90,7 @@ CREATE TABLE `livros` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `postagem`
+-- Estrutura para tabela `postagem`
 --
 
 CREATE TABLE `postagem` (
@@ -106,25 +104,39 @@ CREATE TABLE `postagem` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `usuario`
+-- Estrutura para tabela `usuario`
 --
 
 CREATE TABLE `usuario` (
-  `id_usuario` varchar(25) NOT NULL,
   `senha` varchar(20) DEFAULT NULL,
   `nome_compl` varchar(100) DEFAULT NULL,
-  `telefone` decimal(20,0) DEFAULT NULL,
-  `email` text,
-  `logradouro` text,
-  `imagem` longblob
+  `telefone` varchar(20) DEFAULT NULL,
+  `email` varchar(200) DEFAULT NULL,
+  `imagem` longblob,
+  `DDD` varchar(2) DEFAULT NULL,
+  `iduser` int(11) NOT NULL,
+  `cidade` varchar(20) DEFAULT NULL,
+  `estado` varchar(3) DEFAULT NULL,
+  `bairro` varchar(50) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Indexes for dumped tables
+-- Fazendo dump de dados para tabela `usuario`
+--
+
+INSERT INTO `usuario` (`senha`, `nome_compl`, `telefone`, `email`, `imagem`, `DDD`, `iduser`, `cidade`, `estado`, `bairro`) VALUES
+('8755', 'gfyhfyyyyyyyyy', NULL, 'GABRIEL@GMAIL.COM', NULL, '0', 1, '', '', ''),
+('123', 'Drago', '42224523', 'GABRIEL@GMAIL.COM', NULL, '22', 2, '', '', ''),
+('123', 'Drago', '4552345', 'teste@gmail.com', NULL, '22', 3, '', '', ''),
+('123', 'Sr_D', '42224523', 'GABRIEL@GMAIL.COM', NULL, '22', 4, '', '', ''),
+('123', 'Drago', '42224523', 'dfsgdfgsdf', NULL, '22', 6, 'fdgsdf', 'PI', 'n interessa');
+
+--
+-- Índices de tabelas apagadas
 --
 
 --
--- Indexes for table `contacta`
+-- Índices de tabela `contacta`
 --
 ALTER TABLE `contacta`
   ADD PRIMARY KEY (`cod_texto`),
@@ -132,19 +144,19 @@ ALTER TABLE `contacta`
   ADD KEY `fki_conversa` (`id_usuario`);
 
 --
--- Indexes for table `envio`
+-- Índices de tabela `envio`
 --
 ALTER TABLE `envio`
   ADD KEY `fki_cod_usuario` (`cod_usuario`);
 
 --
--- Indexes for table `instituicao`
+-- Índices de tabela `instituicao`
 --
 ALTER TABLE `instituicao`
   ADD PRIMARY KEY (`id_inst`);
 
 --
--- Indexes for table `postagem`
+-- Índices de tabela `postagem`
 --
 ALTER TABLE `postagem`
   ADD PRIMARY KEY (`cod_post`),
@@ -152,13 +164,20 @@ ALTER TABLE `postagem`
   ADD KEY `fki_instituicao` (`cod_inst`);
 
 --
--- Indexes for table `usuario`
+-- Índices de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`id_usuario`);
-COMMIT;
+  ADD PRIMARY KEY (`iduser`);
 
+--
+-- AUTO_INCREMENT de tabelas apagadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `iduser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-.

@@ -75,7 +75,7 @@ else
 if(document.cadastro.senha.value=="")
 {
 alert("Digite uma senha!");
-return false;
+return false; 
 }
 else
 return true;
@@ -110,8 +110,13 @@ return true;
       <td><input name="telefone" type="text" id="telefone"/> </td>
     </tr>
     <tr>
-      <td>Endereço:</td>
-      <td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" />
+      <td>Rua:</td>
+      <td><input name="rua" type="text" id="rua" maxlength="20" />
+        <span class="style1">*</span></td>
+    </tr>
+    <tr>
+      <td>Bairro:</td>
+      <td><input name="bairro" type="text" id="bairro" maxlength="20" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
@@ -119,7 +124,7 @@ return true;
       <td><input name="cidade" type="text" id="cidade" maxlength="20" />
         <span class="style1">*</span></td>
     </tr>
-    <tr>
+            <tr>
       <td>Estado:</td>
       <td><select name="estado" id="estado">
         <option>Selecione...</option>
@@ -153,18 +158,8 @@ return true;
         <span class="style1">*      </span></td>
     </tr>
     <tr>
-      <td>Bairro:</td>
-      <td><input name="bairro" type="text" id="bairro" maxlength="20" />
-        <span class="style1">*</span></td>
-    </tr>
-    <tr>
-      <td>País:</td>
-      <td><input name="pais" type="text" id="pais" maxlength="20" />
-        <span class="style1">*</span></td>
-    </tr>
-    <tr>
       <td>Usuário:</td>
-      <td><input name="login" type="text" id="login" maxlength="12" />
+      <td><input name="idlogin" type="text" id="idlogin" maxlength="12" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
@@ -196,4 +191,9 @@ return true;
 			<script src="assets/js/main.js"></script>
 
 	</body>
+<<<<<<< HEAD
 </html>
+=======
+  <!-- to commit -->
+</html>
+>>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818

@@ -1,9 +1,9 @@
+<?php 
+include ('logs.php');
+ ?>
+
 <!DOCTYPE HTML>
-<!--
-	Introspect by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 	<head>
 		<title>Login</title>
@@ -24,10 +24,10 @@
 						<section>
 							<h2>Login</h2>
 						</section>
-<!-- Footer --><form method="POST" action="perfil.php">
-					<label>Login:</label><input type="text" name="login" id="login"><br>
+<!-- Footer --><form method="POST" action="logs.php">
+					<label>Login:</label><input type="text" name="email" id="login"><br>
 					<label>Senha:</label><input type="password" name="senha" id="senha"><br>
-					<input type="submit" value="entrar" id="entrar" name="entrar"><br>
+					<input type="submit" value="entrar" id="entrar" name="submit"><br>
 					<a href="cadastrousu.php">Ainda não tem cadastro? Cadastre-se aqui!</a>
 				</form>
 
