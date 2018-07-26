@@ -192,7 +192,12 @@ return true;
 
 	</body>
 <<<<<<< HEAD
+<<<<<<< HEAD
 </html>
+=======
+  <!-- to commit -->
+</html>
+>>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
 =======
   <!-- to commit -->
 </html>

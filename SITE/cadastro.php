@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -75,17 +76,26 @@ echo "Seu cadastro foi realizado com sucesso!Agradecemos a atenção.";
 	$con = mysqli_connect('127.0.0.1','root', 'root');
 
 =======
+=======
+>>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
 <?php
 
 	$con = mysqli_connect('127.0.0.1','root', 'root');
 	//Coloca os coisas ali...No meio de '' coloquem a "root"...Isso se vocês estiverem no pc da escola
+<<<<<<< HEAD
+>>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
+=======
 >>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
 	if(!$con)
 	{
 		echo 'deu ruim';
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+	//Coloquem o nome do BD que esta entre "test";
+>>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
 =======
 	//Coloquem o nome do BD que esta entre "test";
 >>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
@@ -94,6 +104,7 @@ echo "Seu cadastro foi realizado com sucesso!Agradecemos a atenção.";
 		echo 'BD não selecionado';
 	}
 	//Criem strings e coloquem o mesmo nome do BD
+<<<<<<< HEAD
 <<<<<<< HEAD
 	$nome = $_POST['nome_compl'];
 	$email = $_POST['email'];
@@ -108,6 +119,8 @@ echo "Seu cadastro foi realizado com sucesso!Agradecemos a atenção.";
 	//coloquem o nome da tabela que quer cadastrar depois de usuario e depois os nomes das strings e depois de VALUES coloquem as strings criadas
 	$sql = "INSERT INTO usuario (nome_compl, email, senha, telefone, ddd, logradouro ) VALUES ('$nome', '$email', '$senha', '$telefone', '$DDD', '$logradouro')";
 =======
+=======
+>>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
 	$senha = $_POST['senha'];
 	$nome = $_POST['nome_compl'];
 	$telefone = $_POST['telefone'];
@@ -122,6 +135,9 @@ echo "Seu cadastro foi realizado com sucesso!Agradecemos a atenção.";
 	
 	//coloquem o nome da tabela que quer cadastrar depois de usuario e depois os nomes das strings e depois de VALUES coloquem as strings criadas
 	$sql = "INSERT INTO usuario (nome_compl, email, senha, telefone, ddd, cidade, estado, bairro) VALUES ('$nome', '$email', '$senha', '$telefone', '$DDD', '$cidade', '$estado', '$bairro')";
+<<<<<<< HEAD
+>>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
+=======
 >>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
 	
 	if(!mysqli_query($con,$sql))
@@ -137,11 +153,17 @@ echo "Seu cadastro foi realizado com sucesso!Agradecemos a atenção.";
 	//header("refresh:;2 url=inicio.html");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ?>
 <<<<<<< HEAD
 >>>>>>> 13d940e665164d45bf6ac62124049729f7fad41d
 =======
 >>>>>>> 13d940e665164d45bf6ac62124049729f7fad41d
+=======
+	//By volei y google
+	
+?>
+>>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
 =======
 	//By volei y google
 	

@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <!--
 <<<<<<< HEAD
+<<<<<<< HEAD
 	Introspect by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
@@ -24,6 +25,8 @@
 							<h3>Cadastro de Livro</h3>
 			</section>		
 =======
+=======
+>>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
     Introspect by TEMPLATED
     templated.co @templatedco
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
@@ -46,6 +49,9 @@
                         <section>
                             <h3>Cadastro de Livro</h3>
             </section>        
+<<<<<<< HEAD
+>>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
+=======
 >>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
 <!-- Footer -->
 <script type="text/javascript">
@@ -134,6 +140,7 @@ return true;
 
       <?php include ("rodape.html") ?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
@@ -144,6 +151,8 @@ return true;
 </html>
    	</body>
 =======
+=======
+>>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
         <!-- Scripts -->
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/js/skel.min.js"></script>
@@ -153,5 +162,8 @@ return true;
     </body>
 </html>
        </body>
+<<<<<<< HEAD
+>>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
+=======
 >>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
 </html>
