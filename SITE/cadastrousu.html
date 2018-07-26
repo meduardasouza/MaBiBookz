@@ -1,5 +1,9 @@
 <!DOCTYPE HTML>
-
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
 	<head>
 		<title>Cadastro</title>
@@ -10,7 +14,12 @@
 	<body>
 
 		<!-- Header -->
-      <?php include ("cabeçalhosc.html") ?>
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">MaBiBookz</a>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
 		<!-- Main -->
 			<section id="main">
@@ -19,7 +28,7 @@
 						<!-- Form -->
 						<section>
 							<h3>Cadastro</h3>
-			</section>		
+						</section>		
 <!-- Footer -->
 <script type="text/javascript">
 function validaCampo()
@@ -75,7 +84,7 @@ else
 if(document.cadastro.senha.value=="")
 {
 alert("Digite uma senha!");
-return false; 
+return false;
 }
 else
 return true;
@@ -88,7 +97,7 @@ return true;
   <table width="625" border="0">
     <tr>
       <td width="69">Nome ou Instituição:</td>
-      <td width="546"><input name="nome_compl" type="text" id="nome" size="70" maxlength="500" />
+      <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="500" />
         <span class="style1">*</span></td>
     </tr>
       <td>Email:</td>
@@ -110,13 +119,8 @@ return true;
       <td><input name="telefone" type="text" id="telefone"/> </td>
     </tr>
     <tr>
-      <td>Rua:</td>
-      <td><input name="rua" type="text" id="rua" maxlength="20" />
-        <span class="style1">*</span></td>
-    </tr>
-    <tr>
-      <td>Bairro:</td>
-      <td><input name="bairro" type="text" id="bairro" maxlength="20" />
+      <td>Endereço:</td>
+      <td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
@@ -124,7 +128,7 @@ return true;
       <td><input name="cidade" type="text" id="cidade" maxlength="20" />
         <span class="style1">*</span></td>
     </tr>
-            <tr>
+    <tr>
       <td>Estado:</td>
       <td><select name="estado" id="estado">
         <option>Selecione...</option>
@@ -158,8 +162,18 @@ return true;
         <span class="style1">*      </span></td>
     </tr>
     <tr>
+      <td>Bairro:</td>
+      <td><input name="bairro" type="text" id="bairro" maxlength="20" />
+        <span class="style1">*</span></td>
+    </tr>
+    <tr>
+      <td>País:</td>
+      <td><input name="pais" type="text" id="pais" maxlength="20" />
+        <span class="style1">*</span></td>
+    </tr>
+    <tr>
       <td>Usuário:</td>
-      <td><input name="idlogin" type="text" id="idlogin" maxlength="12" />
+      <td><input name="login" type="text" id="login" maxlength="12" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
@@ -178,12 +192,24 @@ return true;
           <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
          </p>
       <p>           <span class="style1">* Campos com * são obrigatórios!          </span> </p></td>
-      <h5> <a href="login.php"> Já tem cadastro? Faça login! </a> </h5>
+      <h5> <a href="login.html"> Já tem cadastro? Faça login! </a> </h5>
     </tr>
   </table>
 </form>
 
-      <?php include ("rodape.html") ?>
+      <section id="footer">
+        <div class="inner">
+          <div class="copyright">
+            &copy; Maria Eduarda e Bianka. | Inspirado no Templated
+          </div>
+        </div>
+        <br>
+                  <ul class="icons">
+                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                  </ul>
+      </section>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
@@ -191,14 +217,4 @@ return true;
 			<script src="assets/js/main.js"></script>
 
 	</body>
-<<<<<<< HEAD
-<<<<<<< HEAD
 </html>
-=======
-  <!-- to commit -->
-</html>
->>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
-=======
-  <!-- to commit -->
-</html>
->>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
