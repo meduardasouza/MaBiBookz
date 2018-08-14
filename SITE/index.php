@@ -38,7 +38,7 @@
 								<img src="images/pic01.jpg" alt="" />
 							</div>
 							<p>Com a doção dos livros, você pode liberar espaço nas prateleiras da sua casa, e incentivar a educação
-							por todo o Brasil.</p>
+							por todo o Brasil. Além disso, é uma forma de ajudar ao próximo de forma simples, mas que pode fazer a diferença na vida de muitas pessoas.</p>
 						</div>
 					</article>
 					<article class="alt">
@@ -50,7 +50,7 @@
 								<img src="images/pic02.jpg" alt="" />
 							</div>
 							<p>Procuramos atingir o maior número de instituições possíveis, para que mais crianças, jovens e adultos
-							possam ter contato com a literatura mundial.</p>
+							possam ter contato com a literatura mundial. Com o MaBiBookz, crianças de diversos cantos do país, terão acesso a uma educação literária e uma prática de leitura maior.</p>
 						</div>
 					</article>
 				</div>
