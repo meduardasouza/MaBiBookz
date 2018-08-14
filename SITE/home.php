@@ -16,7 +16,7 @@
 		<!-- Header -->
       <?php include ("cabeçalho.html") ?>
 
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+			
 
 		<!-- Main -->
 							

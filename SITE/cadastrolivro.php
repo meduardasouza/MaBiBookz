@@ -1,32 +1,5 @@
 <!DOCTYPE HTML>
 <!--
-<<<<<<< HEAD
-<<<<<<< HEAD
-	Introspect by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
-	<head>
-		<title> Cadastro de Livro </title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
-
-		<!-- Header -->
-      <?php include ("cabeçalhopi.html") ?>
-      			<section id="main">
-				<div class="inner">
-					<header class="major special">
-						<!-- Form -->
-						<section>
-							<h3>Cadastro de Livro</h3>
-			</section>		
-=======
-=======
->>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
     Introspect by TEMPLATED
     templated.co @templatedco
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
@@ -49,10 +22,6 @@
                         <section>
                             <h3>Cadastro de Livro</h3>
             </section>        
-<<<<<<< HEAD
->>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
-=======
->>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
 <!-- Footer -->
 <script type="text/javascript">
 function validaCampo()
@@ -98,16 +67,21 @@ return true;
 </head>
  
 <body>
-<form id="cadastro" name="cadastro" method="post" action="cadastro.php" onsubmit="return validaCampo(); return false;">
+<form id="cadastrolivroser" name="cadastrolivroser" method="post" action="cadastrolivroser.php" onsubmit="return validaCampo(); return false;">
   <table width="625" border="0">
     <tr>
       <td width="69">Nome da Instituição:</td>
-      <td width="546"><input name="nome" type="text" id="nomeinst" size="70" maxlength="500" />
+      <td width="546"><input name="nome_insti" type="text" id="nome_insti" size="70" maxlength="500" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
       <td width="69">Nome do Livro:</td>
-      <td width="546"><input name="nome" type="text" id="nomelivro" size="70" maxlength="500" />
+      <td width="546"><input name="nome_livro" type="text" id="nome_livro" size="70" maxlength="500" />
+        <span class="style1">*</span></td>
+    </tr>
+    <tr>
+      <td width="69">Gênero do Livro:</td>
+      <td width="546"><input name="genero" type="text" id="genero" size="70" maxlength="500" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
@@ -119,11 +93,6 @@ return true;
       <td> Telefone para contato </td>
       <td>DDD: <input name="ddd" type="text" id="ddd" size="2" maxlength="2" />
       <td>Telefone:<input name="telefone" type="text" id="telefone"/> </td>
-    </tr>
-    <tr>
-      <td>Endereço a ser enviado:</td>
-      <td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" />
-        <span class="style1">*</span></td>
     </tr>
       <td colspan="2"><p>
 
@@ -139,20 +108,6 @@ return true;
 </form>
 
       <?php include ("rodape.html") ?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
-   	</body>
-=======
-=======
->>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
         <!-- Scripts -->
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/js/skel.min.js"></script>
@@ -162,8 +117,4 @@ return true;
     </body>
 </html>
        </body>
-<<<<<<< HEAD
->>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
-=======
->>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
 </html>

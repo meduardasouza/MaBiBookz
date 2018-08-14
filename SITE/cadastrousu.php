@@ -1,5 +1,9 @@
 <!DOCTYPE HTML>
-
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
 	<head>
 		<title>Cadastro</title>
@@ -111,17 +115,17 @@ return true;
     </tr>
     <tr>
       <td>Rua:</td>
-      <td><input name="rua" type="text" id="rua" maxlength="20" />
+      <td><input name="rua" type="text" id="rua" maxlength="50" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
       <td>Bairro:</td>
-      <td><input name="bairro" type="text" id="bairro" maxlength="20" />
+      <td><input name="bairro" type="text" id="bairro" maxlength="50" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
       <td>Cidade:</td>
-      <td><input name="cidade" type="text" id="cidade" maxlength="20" />
+      <td><input name="cidade" type="text" id="cidade" maxlength="50" />
         <span class="style1">*</span></td>
     </tr>
             <tr>
@@ -159,12 +163,12 @@ return true;
     </tr>
     <tr>
       <td>Usuário:</td>
-      <td><input name="idlogin" type="text" id="idlogin" maxlength="12" />
+      <td><input name="idlogin" type="text" id="idlogin" maxlength="30" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
       <td>Senha:</td>
-      <td><input name="senha" type="password" id="senha" maxlength="12" />
+      <td><input name="senha" type="password" id="senha" maxlength="30" />
           <span class="style1">*</span></td>
     </tr>
     <tr>
@@ -191,14 +195,5 @@ return true;
 			<script src="assets/js/main.js"></script>
 
 	</body>
-<<<<<<< HEAD
-<<<<<<< HEAD
-</html>
-=======
   <!-- to commit -->
 </html>
->>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
-=======
-  <!-- to commit -->
-</html>
->>>>>>> cccb1e9def45eeda7969d5eebd116a49c3e92818
