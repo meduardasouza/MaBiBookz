@@ -3,7 +3,6 @@ include ('logs.php');
  ?>
 
 <!DOCTYPE HTML>
-
 <html>
 	<head>
 		<title>Login</title>
@@ -12,9 +11,7 @@ include ('logs.php');
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
-
       <?php include ("cabeçalhologin.html") ?>
-
 
 		<!-- Main -->
 			<section id="main">
@@ -24,13 +21,12 @@ include ('logs.php');
 						<section>
 							<h2>Login</h2>
 						</section>
-<!-- Footer --><form method="POST" action="logs.php">
+	<form method="POST" action="logs.php">
 					<label>Login:</label><input type="text" name="email" id="login"><br>
 					<label>Senha:</label><input type="password" name="senha" id="senha"><br>
 					<input type="submit" value="entrar" id="entrar" name="submit"><br>
 					<a href="cadastrousu.php">Ainda não tem cadastro? Cadastre-se aqui!</a>
 				</form>
-
 
       <?php include ("rodape.html") ?>
 

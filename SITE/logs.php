@@ -1,6 +1,5 @@
 <?php
-//LOGIN
-//ACHO QUE é ISSO...
+
 $error=''; 
 if(isset($_POST['submit'])){
  if(empty($_POST['email']) || empty($_POST['senha'])){
@@ -28,10 +27,11 @@ if(isset($_POST['submit'])){
  else
  {
  $error = "Usuario ou senha errado";
+ header("Location: ruim.php");
  }
  mysqli_close($conn); // ISSO AQUI É UM tipo de return...Parando o codigo....(return não para)
  }
 }
- //TNX Gabriel Silva Solza
+ //TNX Gabriel Silva Souza
 
 ?>
