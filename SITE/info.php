@@ -14,7 +14,7 @@
 	<body>
 
 		<!-- Header -->
-      <?php include ("cabeçalhopi.html") ?>
+      <?php include ("cabeçalhopi.php") ?>
 
 			
 
@@ -33,7 +33,7 @@
 			</section>
 
 
-      <?php include ("rodape.html") ?>
+      <?php include ("rodape.php") ?>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

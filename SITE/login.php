@@ -11,7 +11,7 @@ include ('logs.php');
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
-      <?php include ("cabeçalhologin.html") ?>
+      <?php include ("cabeçalhosc.php") ?>
 
 		<!-- Main -->
 			<section id="main">
@@ -28,7 +28,7 @@ include ('logs.php');
 					<a href="cadastrousu.php">Ainda não tem cadastro? Cadastre-se aqui!</a>
 				</form>
 
-      <?php include ("rodape.html") ?>
+      <?php include ("rodape.php") ?>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

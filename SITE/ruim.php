@@ -14,7 +14,7 @@
     <body>
 
         <!-- Header -->
-  <?php include ("cabeçalhosc.html") ?>
+  <?php include ("cabeçalhosc.php") ?>
                     <section id="main">
                 <div class="inner">
                     <header class="major special">
@@ -26,7 +26,7 @@
 <br><br><br><br><br>
 
 
-      <?php include ("rodape.html") ?>
+      <?php include ("rodape.php") ?>
         <!-- Scripts -->
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/js/skel.min.js"></script>
