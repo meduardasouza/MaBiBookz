@@ -51,12 +51,8 @@
 	<h5> <a href="cadastrolivro.php" > Clique para cadastrar um livro novo. </a> </h5>
 		<table width="625" border="0">
 		    <tr>
-		      <td width="69">Dom Casmurro</td>
-		      <td> <a href="doardc.php" > Clique para doar. </a> </td>
-		    </tr>
-		    <tr>
-		      <td width="69"> A Garota no Trem</td>
-		      <td> <a href="doarag.php" > Clique para doar. </a> </td>
+		      <td width="90"> Você não cadastrou nenhum livro. </td>
+		      <td> <a href="cadastrolivro.php" > Clique aqui para cadastrar. </a> </td>
 		    </tr>
 		</table>
 			</section>
