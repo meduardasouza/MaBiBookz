@@ -1,3 +1,14 @@
+<?php
+   header("Content-Type: text/html; charset=ISO-8859-1",true);
+   require_once("functions.php");
+   seguranca();
+   $username = $_SESSION['user']['username'];
+   $nome = $_SESSION['user']['nome'];
+   $email = $_SESSION['user']['email'];
+
+   //ISSO DEVE ESTAR NO INICIO DE CADA PÁGINA QUE O USUÁRIO USAR APÓS O LOGIN
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Introspect by TEMPLATED
@@ -22,7 +33,7 @@
 								<img src="images/perfil.jpg" width="150"  height="150">
 							</div>
 							<br>
-			<h2> Instituição das Criancinhas Carentes </h2>
+			<h2><?php echo $nome ?> </h2>
 	<div id="tabelinha">
 		<table width="625" border="0">
 		    <tr>

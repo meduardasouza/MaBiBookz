@@ -163,7 +163,7 @@ return true;
     </tr>
     <tr>
       <td>Usuário:</td>
-      <td><input name="idlogin" type="text" id="idlogin" maxlength="30" />
+      <td><input name="username" type="text" id="username" maxlength="30" />
         <span class="style1">*</span></td>
     </tr>
     <tr>

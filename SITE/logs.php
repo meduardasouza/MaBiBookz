@@ -1,37 +1,63 @@
 <?php
+	require_once("config.php"); //É A CONEXÃO PADRÃO
 
-$error=''; 
-if(isset($_POST['submit'])){
- if(empty($_POST['email']) || empty($_POST['senha'])){
- $error = "Usuário ou senha errado";
- }
- else
- {
- //Defina uma variavel e muda o que esta em ["nome no bd"];
- $usuario = $_POST['email'];
- $senha = $_POST['senha'];
- //Deixa o nome do host normal...Root tambem...Se você estiver na escola....Coloca "root" nos "" sem nada...
- $conn = mysqli_connect("127.0.0.1", "root", "root");
- //Entre os "coloca o nome do BD"
- $db = mysqli_select_db($conn, "MaBiBookz");
- 
- //coloque entre FROM e Where o nome da tabela do bd e depois de WHERE coloca o que você colocou nas string...
 
- $query = mysqli_query($conn, "SELECT * FROM usuario WHERE senha='$senha' AND email='$usuario'");
- 
- 
- $rows = mysqli_num_rows($query);
- if($rows == 1){
- header("Location: perfil.php"); // coloca a pagina que voces quiserem(recomendo a de login, pra ficar mais fácil)
- }
- else
- {
- $error = "Usuario ou senha errado";
- header("Location: ruim.php");
- }
- mysqli_close($conn); // ISSO AQUI É UM tipo de return...Parando o codigo....(return não para)
- }
-}
- //TNX Gabriel Silva Souza
+	if ($_SERVER['REQUEST_METHOD'] == 'POST') { 
 
+		if(checkValues($_POST['user'], $_POST['senha'])) 
+		{
+			$username = $_POST['user'];
+			$senha = $_POST['senha'];
+			login($username, $senha); 
+
+		} else {
+			$message = '<h1>Por favor, preencha os campos corretamente.</h1>
+						<h3><a href="../index.html">Tentar Novamente</a></h3>'; 
+						
+			echo $message;
+		}
+	} else {
+		header("Location: ../index.html");
+	}
+
+	function checkValues($username, $senha) {
+		if( isset($username) && !empty($username) && isset($senha) && !empty($senha) ){
+			$R = true; 
+			
+		}
+		else {
+			$R = false; 
+		}
+		return $R; 
+	}
+
+	function login($username, $senha) { 
+		$config = new Config();
+		$conexao = $config->conectaBanco();
+		
+
+		$query = "SELECT * FROM usuario WHERE username = '".$username."' AND senha = ".$senha; //O BD onde o PHP vai procurar
+
+		$result = mysqli_query($conexao, $query) or die('Invalid query: ' . $conexao->error); 
+
+		if(mysqli_num_rows($result) == 1){
+			$user = $result->fetch_array(MYSQLI_ASSOC);
+			session_start();
+
+			$_SESSION['user']['username'] = $user['username'];
+			$_SESSION['user']['nome'] = $user['nome'];
+			$_SESSION['user']['email'] = $user['email'];
+
+			//AQUI AGORA VAI FICAR TODAS ENTIDADES DA TABELA
+
+			header("Location: perfil.php"); //O PERFIL DO USUÁRIO
+
+		} else {
+			$message = '<h1>Senha ou username Incorretos.</h1>
+						<h3>Por favor, <a href="../index.html">Tente Novamente</a></h3>';
+						echo $message;
+						
+
+		}
+	}
 ?>

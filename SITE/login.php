@@ -1,6 +1,4 @@
-<?php 
-include ('logs.php');
- ?>
+
 
 <!DOCTYPE HTML>
 <html>
@@ -21,8 +19,8 @@ include ('logs.php');
 						<section>
 							<h2>Login</h2>
 						</section>
-	<form method="POST" action="logs.php">
-					<label>Login:</label><input type="text" name="email" id="login"><br>
+	<form method="post" action="logs.php">
+					<label>Login:</label><input type="text" name="user" id="login"><br>
 					<label>Senha:</label><input type="password" name="senha" id="senha"><br>
 					<input type="submit" value="entrar" id="entrar" name="submit"><br>
 					<a href="cadastrousu.php">Ainda não tem cadastro? Cadastre-se aqui!</a>
