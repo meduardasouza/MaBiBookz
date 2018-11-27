@@ -49,15 +49,9 @@
 
 	<h3> Lista de Desejos </h3>
 	<h5> <a href="cadastrolivro.php" > Clique para cadastrar um livro novo. </a> </h5>
+	<h6> <a href="rastreio.php" > Clique aqui para saber onde estão seus livros cadastrados. </a> </h6>
 		<table width="625" border="0">
-		    <tr>
-		      <td width="69">Dom Casmurro</td>
-		      <td> <a href="doardc.php" > Clique para doar. </a> </td>
-		    </tr>
-		    <tr>
-		      <td width="69"> A Garota no Trem</td>
-		      <td> <a href="doarag.php" > Clique para doar. </a> </td>
-		    </tr>
+		
 		</table>
 			</section>
 
