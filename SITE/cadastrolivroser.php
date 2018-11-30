@@ -13,11 +13,11 @@
 	}
 	//Criem strings e coloquem o mesmo nome do BD
 	$nomeinsti = $_POST['nome_insti'];
-	/*$nomelivro = $_POST['nome_livro'];
+	$nomelivro = $_POST['nome_livro'];
 	$genero = $_POST['genero'];
 	$email = $_POST['email'];
 	$DDD = $_POST['ddd'];
-	$telefone = $_POST['telefone'];*/
+	$telefone = $_POST['telefone'];
 
 	//coloquem o nome da tabela que quer cadastrar depois de usuario e depois os nomes das strings e depois de VALUES coloquem as strings criadas
 	$sql = "INSERT INTO livros (nome_insti) VALUES ('$nomeinsti')";
