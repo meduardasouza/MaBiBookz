@@ -7,25 +7,13 @@
 <html>
 			<header id="header">
 				<div class="inner">
-					<a href="home.php" class="logo">MaBiBookz</a>
+					<a href="index.php" class="logo">MaBiBookz</a>
 					<nav id="nav">
 						<a href="home.php">Página Inicial</a>
 			            <a href="perfil.php">Perfil</a>
 			            <a href="info.php"> Nosso Objetivo</a>
-			            <a href="index.php?act=logout">Encerrar Sessão</a>
+			            <a href="index.php">Sair</a>
 					</nav>
-
-
-<!--index.php -->
-<?
-
-if($_GET["act"]=="logout"){
-session_destroy();
-header("location: index.php");
-exit;
-}
-
-?>
 				</div>
 			</header>
 </html>

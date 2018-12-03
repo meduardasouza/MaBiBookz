@@ -12,8 +12,13 @@
 		echo 'BD não selecionado';
 	}
 	//Criem strings e coloquem o mesmo nome do BD
+<<<<<<< HEAD
 	$nome_insti = $_POST['nome_insti'];
 	$nome_livro = $_POST['nome_livro'];
+=======
+	$nomeinsti = $_POST['nome_insti'];
+	$nomelivro = $_POST['nome_livro'];
+>>>>>>> 2212b66709e35112cf7ca9d6b20d2f7ccda4e960
 	$genero = $_POST['genero'];
 	$email = $_POST['email'];
 	$DDD = $_POST['ddd'];
