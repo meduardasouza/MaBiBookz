@@ -17,7 +17,7 @@
 -->
 <html>
 	<head>
-		<title> Perfil </title>
+		<title> Livro Cadastrado </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -27,12 +27,6 @@
 		<!-- Header -->
       <?php include ("cabeçalhopi.php") ?>
 			<section>
-							<br>
-							<br>
-							<div class="circle">
-								<img src="images/perfil.jpg" width="150"  height="150">
-							</div>
-							<br>
 			<h2><?php echo $nome ?> </h2>
 	<div id="tabelinha">
 		<table width="625" border="0">
@@ -46,15 +40,6 @@
 		    </tr>
 		</table>
 	</div>
-
-	<h3> Lista de Desejos </h3>
-	<h5> <a href="cadastrolivro.php" > Clique para cadastrar um livro novo. </a> </h5>
-		<table width="625" border="0">
-			<tr>
-		      <td width="69">Livro:</td>
-		      <td> Rua xxxxxxx. </td>
-		    </tr>
-		</table>
 	<h6> <a href="rastreio.php" > Clique aqui para saber onde estão seus livros cadastrados. </a> </h6>
 
 			</section>

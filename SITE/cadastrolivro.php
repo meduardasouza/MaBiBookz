@@ -26,13 +26,13 @@
 <script type="text/javascript">
 function validaCampo()
 {
-if(document.cadastro.nomeinst.value=="")
+if(document.cadastro.nome_insti.value=="")
 {
 alert("O Campo Nome da Instituição é obrigatório!");
 return false;
 }
 else 
-if(document.cadastro.nomelivro.value=="")
+if(document.cadastro.nome_livro.value=="")
 {
 alert("O Campo Nome do Livro é obrigatório!");
 return false;

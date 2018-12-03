@@ -12,15 +12,15 @@
 		echo 'BD não selecionado';
 	}
 	//Criem strings e coloquem o mesmo nome do BD
-	$nomeinsti = $_POST['nome_insti'];
-	/*$nomelivro = $_POST['nome_livro'];
+	$nome_insti = $_POST['nome_insti'];
+	$nome_livro = $_POST['nome_livro'];
 	$genero = $_POST['genero'];
 	$email = $_POST['email'];
 	$DDD = $_POST['ddd'];
-	$telefone = $_POST['telefone'];*/
+	$telefone = $_POST['telefone'];
 
 	//coloquem o nome da tabela que quer cadastrar depois de usuario e depois os nomes das strings e depois de VALUES coloquem as strings criadas
-	$sql = "INSERT INTO livros (nome_insti) VALUES ('$nomeinsti')";
+	$sql = "INSERT INTO livros (nome_insti, nome_livro, genero, email, ddd, telefone) VALUES ('$nome_insti', '$nome_livro', '$genero', '$email', '$DDD', '$telefone')";
 	
 	if(!mysqli_query($con,$sql))
 	{
@@ -29,7 +29,7 @@
 	else 
 	{
 		echo 'Cadastrado com sucesso'; 
-		header("Location: ruim.php");// A pagina que vocês querem ir(recomendo que seja a de LOGIN)
+		header("Location: livrocad.php");// A pagina que vocês querem ir(recomendo que seja a de LOGIN)
 	}
 	
 	//header("refresh:;2 url=inicio.html");
