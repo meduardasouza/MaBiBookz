@@ -12,20 +12,15 @@
 		echo 'BD não selecionado';
 	}
 	//Criem strings e coloquem o mesmo nome do BD
-<<<<<<< HEAD
-	$nome_insti = $_POST['nome_insti'];
+	$autor = $_POST['autor'];
 	$nome_livro = $_POST['nome_livro'];
-=======
-	$nomeinsti = $_POST['nome_insti'];
-	$nomelivro = $_POST['nome_livro'];
->>>>>>> 2212b66709e35112cf7ca9d6b20d2f7ccda4e960
 	$genero = $_POST['genero'];
-	$email = $_POST['email'];
-	$DDD = $_POST['ddd'];
-	$telefone = $_POST['telefone'];
+	$editora = $_POST['editora'];
+	$isbn = $_POST['isbn'];
+	$sinopse = $_POST['sinopse'];
 
 	//coloquem o nome da tabela que quer cadastrar depois de usuario e depois os nomes das strings e depois de VALUES coloquem as strings criadas
-	$sql = "INSERT INTO livros (nome_insti, nome_livro, genero, email, ddd, telefone) VALUES ('$nome_insti', '$nome_livro', '$genero', '$email', '$DDD', '$telefone')";
+	$sql = "INSERT INTO livros (autor, nome_livro, genero, editora, isbn, sinopse) VALUES ('$autor', '$nome_livro', '$genero', '$editora', '$isbn', '$sinopse')";
 	
 	if(!mysqli_query($con,$sql))
 	{

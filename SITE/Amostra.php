@@ -6,8 +6,17 @@
    $nome = $_SESSION['user']['nome'];
    $email = $_SESSION['user']['email'];
    $cpf = $_SESSION['user']['cpf'];
+    $nome_livro = $_SESSION['livro']['nome_livro'];
+    $genero = $_SESSION['livro']['genero'];
+    $DDD = $_SESSION['livro']['ddd'];
+    $telefone = $_SESSION['livro']['telefone'];
+
 
    //ISSO DEVE ESTAR NO INICIO DE CADA PÁGINA QUE O USUÁRIO USAR APÓS O LOGIN
+
+
+
+   $sql = "SELECT "
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +25,6 @@
 	<title>Teste</title>
 </head>
 <body>
-  <h1><?php echo $nome?></h1> <!-- ISSO AQUI É PARA FAZER APARECER-->
+  <h1><?php echo $nome?></h1><!-- ISSO AQUI É PARA FAZER APARECER-->
 </body>
 </html>

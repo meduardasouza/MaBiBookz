@@ -11,8 +11,10 @@
 			login($username, $senha); 
 
 		} else {
-			
-			header("Location: ruim.php");
+			$message = '<h1>Por favor, preencha os campos corretamente.</h1>
+						<h3><a href="../index.html">Tentar Novamente</a></h3>'; 
+						
+			echo $message;
 		}
 	} else {
 		header("Location: ../index.html");
@@ -45,17 +47,15 @@
 			$_SESSION['user']['username'] = $user['username'];
 			$_SESSION['user']['nome'] = $user['nome'];
 			$_SESSION['user']['email'] = $user['email'];
-			$_SESSION['user']['cidade'] = $user['cidade'];
-			$_SESSION['user']['estado'] = $user['estado'];
-			$_SESSION['user']['bairro'] = $user['bairro'];
-			$_SESSION['user']['telefone'] = $user['telefone'];
-			$_SESSION['user']['email'] = $user['email'];
+
 			//AQUI AGORA VAI FICAR TODAS ENTIDADES DA TABELA
 
 			header("Location: perfil.php"); //O PERFIL DO USUÁRIO
 
 		} else {
-			header("Location: ruim.php");
+			$message = '<h1>Senha ou username Incorretos.</h1>
+						<h3>Por favor, <a href="../index.html">Tente Novamente</a></h3>';
+						echo $message;
 						
 
 		}

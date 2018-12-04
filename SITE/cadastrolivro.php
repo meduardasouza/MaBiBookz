@@ -26,38 +26,39 @@
 <script type="text/javascript">
 function validaCampo()
 {
-if(document.cadastro.nome_insti.value=="")
-{
-alert("O Campo Nome da Instituição é obrigatório!");
-return false;
-}
-else 
 if(document.cadastro.nome_livro.value=="")
 {
 alert("O Campo Nome do Livro é obrigatório!");
 return false;
 }
 else
-if(document.cadastro.email.value=="")
+if(document.cadastro.genero.value=="")
 {
-alert("O Campo Email para Contato é obrigatório!");
+alert("O Campo Gênero é obrigatório!");
 return false;
 }
 else
-if(document.cadastro.endereco.value=="")
+if(document.cadastro.autor.value=="")
 {
-alert("O Campo Endereço a ser enviado é obrigatório!");
+alert("O Campo Autor é obrigatório!");
 return false;
 }
 else 
-if(document.cadastro.ddd.value=="")
+if(document.cadastro.editora.value=="")
 {
-alert("O Campo DDD é obrigatório!");
+alert("O Campo Editora é obrigatório!");
 return false;
 }
-if(document.cadastro.telefone.value=="")
+else 
+if(document.cadastro.isbn.value=="")
 {
-alert("O Campo Telefone é obrigatório!");
+alert("O Campo ISBN é obrigatório!");
+return false;
+}
+else
+if(document.cadastro.sinopse.value=="")
+{
+alert("O Campo Sinopse é obrigatório!");
 return false;
 }
 else
@@ -70,11 +71,6 @@ return true;
 <form id="cadastrolivroser" name="cadastrolivroser" method="post" action="cadastrolivroser.php" onsubmit="return validaCampo(); return false;">
   <table width="625" border="0">
     <tr>
-      <td width="69">Nome da Instituição:</td>
-      <td width="546"><input name="nome_insti" type="text" id="nome_insti" size="70" maxlength="500" />
-        <span class="style1">*</span></td>
-    </tr>
-    <tr>
       <td width="69">Nome do Livro:</td>
       <td width="546"><input name="nome_livro" type="text" id="nome_livro" size="70" maxlength="500" />
         <span class="style1">*</span></td>
@@ -85,19 +81,29 @@ return true;
         <span class="style1">*</span></td>
     </tr>
     <tr>
-      <td>Email para contato:</td>
-      <td><input name="email" type="text" id="email" size="70" maxlength="500" />
+      <td>Autor:</td>
+      <td><input name="autor" type="text" id="autor" size="70" maxlength="500" />
       <span class="style1">*</span></td>
     </tr>
     <tr>
-      <td> Telefone para contato </td>
-      <td>DDD: <input name="ddd" type="text" id="ddd" size="2" maxlength="2" />
-      <td>Telefone:<input name="telefone" type="text" id="telefone"/> </td>
+      <td>Editora: </td>
+      <td><input name="editora" type="text" id="editora" size="70" maxlength="500" /> 
+      <span class="style1">*</span></td>
+    </tr>
+    <tr>
+      <td>ISBN: </td>
+      <td><input name="isbn" type="text" id="isbn" size="70" maxlength="500" /> 
+      <span class="style1">*</span></td>
+    </tr>
+    <tr>
+      <td>Sinopse: </td>
+      <td><input name="sinopse" type="text" id="sinopse" size="70" maxlength="5000" /> 
+      <span class="style1">*</span></td>
     </tr>
       <td colspan="2"><p>
 
                   <div class="6u$ 12u$(small)">
-                    <input type="checkbox" id="human" name="human" checked>
+                    <input type="checkbox" id="human" name="human" checked="">
                     <label for="human">Eu sou humano e não um robô.</label>
                   </div>
           <input name="cadastrar" type="submit" id="cadastrar" value="Concluir o Cadastro!" /> 

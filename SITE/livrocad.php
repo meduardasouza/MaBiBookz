@@ -5,7 +5,11 @@
    $username = $_SESSION['user']['username'];
    $nome = $_SESSION['user']['nome'];
    $email = $_SESSION['user']['email'];
-
+   $cpf = $_SESSION['user']['cpf'];
+   $nome_livro = $_SESSION['livro']['nome_livro'];
+   $genero = $_SESSION['livro']['genero'];
+   $DDD = $_SESSION['livro']['ddd'];
+   $telefone = $_SESSION['livro']['telefone'];
    //ISSO DEVE ESTAR NO INICIO DE CADA PÁGINA QUE O USUÁRIO USAR APÓS O LOGIN
 ?>
 
@@ -28,6 +32,7 @@
       <?php include ("cabeçalhopi.php") ?>
 			<section>
 			<h2><?php echo $nome ?> </h2>
+				<h3><?php echo $nome_livro ?> </h3>
 	<div id="tabelinha">
 		<table width="625" border="0">
 		    <tr>
