@@ -32,9 +32,7 @@
     
     if($result)
     {
-        
         echo 'Data Updated';
-        header("Location: login.php");
     }else{
         echo 'Data Not Updated';
     }

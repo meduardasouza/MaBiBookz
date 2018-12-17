@@ -25,13 +25,8 @@
     <body>
       <?php include ("cabeçalhosc.php") ?>
         <form action="editaser.php" method="post">
-      <select name="username"> 
-      <option><?php echo $username?></option> 
 
-     </select>
-     <br>
-
-            Nome:<input type="text" name="nome" ><br>
+            Nome:<input type="text" name="nome" >
             Senha:<input type="text" name="senha" ><br>
             Email:<input type="text" name="email" ><br>
             Telefone:<input type="text" name="telefone" ><br>
