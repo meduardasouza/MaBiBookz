@@ -50,7 +50,7 @@
 		    </tr>
 		    <tr>
 		      <td width="100">Dados para contato:</td>
-		      <td> Telefone: <?php echo $DDD ?>   <?php echo $telefone ?> <br> Email: <?php echo $email ?> </td>
+		      <td> Telefone: (<?php echo $DDD ?> ) <?php echo $telefone ?> <br> Email: <?php echo $email ?> </td>
 		    </tr>
 		</table>
 	</div>
