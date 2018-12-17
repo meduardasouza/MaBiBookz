@@ -32,7 +32,6 @@
 
 		<!-- Header -->
       <?php include ("cabeçalhopi.php") ?>
-      <a href="edita.php" > editar dadoss </a>
 			<section>
 							<br>
 							<br>
@@ -40,6 +39,7 @@
 
 								<img src="images/perfil.jpg" width="150"  height="150">
 							</div>
+							<a href="edita.php" > editar dados </a>
 							<br>
 			<h2><?php echo $nome ?> </h2>
 	<div id="tabelinha">
