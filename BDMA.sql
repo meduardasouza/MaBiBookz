@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 04, 2018 at 10:34 AM
--- Server version: 5.7.18-0ubuntu0.16.04.1
--- PHP Version: 7.0.18-0ubuntu0.16.04.1
+-- Tempo de geração: 26/11/2018 às 09:15
+-- Versão do servidor: 5.7.18-0ubuntu0.16.04.1
+-- Versão do PHP: 7.0.18-0ubuntu0.16.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `MaBiBookz`
+-- Banco de dados: `MaBiBookz`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contacta`
+-- Estrutura para tabela `contacta`
 --
 
 CREATE TABLE `contacta` (
@@ -37,7 +37,7 @@ CREATE TABLE `contacta` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `doacao`
+-- Estrutura para tabela `doacao`
 --
 
 CREATE TABLE `doacao` (
@@ -49,7 +49,7 @@ CREATE TABLE `doacao` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `envio`
+-- Estrutura para tabela `envio`
 --
 
 CREATE TABLE `envio` (
@@ -61,7 +61,7 @@ CREATE TABLE `envio` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `instituicao`
+-- Estrutura para tabela `instituicao`
 --
 
 CREATE TABLE `instituicao` (
@@ -77,33 +77,38 @@ CREATE TABLE `instituicao` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `livros`
+-- Estrutura para tabela `livros`
 --
 
 CREATE TABLE `livros` (
   `nome_livro` varchar(80) DEFAULT NULL,
   `genero` varchar(50) DEFAULT NULL,
-  `autor` varchar(100) DEFAULT NULL,
-  `editora` varchar(50) DEFAULT NULL,
-  `isbn` varchar(20) NOT NULL,
-  `sinopse` varchar(5000) NOT NULL,
-  `idlivro` int(11) NOT NULL
+  `email` varchar(100) DEFAULT NULL,
+  `Nome_insti` int(11) NOT NULL,
+  `telefone` varchar(9) DEFAULT NULL,
+  `DDD` varchar(2) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `livros`
+-- Fazendo dump de dados para tabela `livros`
 --
 
-INSERT INTO `livros` (`nome_livro`, `genero`, `autor`, `editora`, `isbn`, `sinopse`, `idlivro`) VALUES
-('MemÃ³rias BrÃ¡s Cubas', 'FicÃ§Ã£o', 'livros@gmail.com', '999765280', '22', 'Biblioteca IFF', 13),
-('Dom Casmurro', 'Drama', 'megs.dlt12@gmail.com', '999765280', '22', 'IFF Campus QuissamÃ£', 14),
-('Demian', 'Drama', 'megs.dlt12@gmail.com', '999765280', '22', 'IFF Campus QuissamÃ£', 15),
-('Harry Potter e a Pedra Filosofal', 'Fantasia', 'JK Rowling', 'Rocco', '8532530788', 'Harry Potter Ã© um garoto cujos pais, feiticeiros, foram assassinados por um poderosÃ­ssimo bruxo quando ele ainda era um bebÃª. Ele foi levado, entÃ£o, para a casa dos tios que nada tinham a ver com o sobrenatural. Pelo contrÃ¡rio. AtÃ© os 10 anos, Harry foi uma espÃ©cie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho, tinha Ã³culos remendados e era tratado como um estorvo. No dia de seu aniversÃ¡rio de 11 anos, entretanto, ele parece deslizar por um buraco sem fundo, como o de Alice no paÃ­s das maravilhas, que o conduz a um mundo mÃ¡gico. Descobre sua verdadeira histÃ³ria e seu destino: ser um aprendiz de feiticeiro atÃ© o dia em que terÃ¡ que enfrentar a pior forÃ§a do mal, o homem que assassinou seus pais. O menino de olhos verde, magricela e desengonÃ§ado, tÃ£o habituado Ã  rejeiÃ§Ã£o, descobre, tambÃ©m, que Ã© um herÃ³i no universo dos magos. Potter fica sabendo que Ã© a Ãºnica pessoa a ter sobrevivido a um ataque do tal bruxo do mal e essa Ã© a causa da marca em forma de raio que ele carrega', 18);
+INSERT INTO `livros` (`nome_livro`, `genero`, `email`, `Nome_insti`, `telefone`, `DDD`) VALUES
+(NULL, NULL, NULL, 1, NULL, ''),
+(NULL, NULL, NULL, 2, NULL, ''),
+(NULL, NULL, NULL, 3, NULL, ''),
+(NULL, NULL, NULL, 4, NULL, ''),
+(NULL, NULL, NULL, 5, NULL, ''),
+(NULL, NULL, NULL, 6, NULL, ''),
+(NULL, NULL, NULL, 7, NULL, ''),
+(NULL, NULL, NULL, 8, NULL, ''),
+(NULL, NULL, NULL, 9, NULL, ''),
+(NULL, NULL, NULL, 10, NULL, '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `postagem`
+-- Estrutura para tabela `postagem`
 --
 
 CREATE TABLE `postagem` (
@@ -117,7 +122,7 @@ CREATE TABLE `postagem` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `usuario`
+-- Estrutura para tabela `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -135,7 +140,7 @@ CREATE TABLE `usuario` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `usuario`
+-- Fazendo dump de dados para tabela `usuario`
 --
 
 INSERT INTO `usuario` (`senha`, `telefone`, `email`, `imagem`, `DDD`, `cidade`, `estado`, `bairro`, `nome`, `username`, `iduser`) VALUES
@@ -147,11 +152,11 @@ INSERT INTO `usuario` (`senha`, `telefone`, `email`, `imagem`, `DDD`, `cidade`, 
 ('159', '9960641208', 'e@gmail.com', NULL, '22', 'QuissamÃ£', 'RJ', 'Carmo', 'nein', 'Sr_D', 6);
 
 --
--- Indexes for dumped tables
+-- Índices de tabelas apagadas
 --
 
 --
--- Indexes for table `contacta`
+-- Índices de tabela `contacta`
 --
 ALTER TABLE `contacta`
   ADD PRIMARY KEY (`cod_texto`),
@@ -159,25 +164,25 @@ ALTER TABLE `contacta`
   ADD KEY `fki_conversa` (`id_usuario`);
 
 --
--- Indexes for table `envio`
+-- Índices de tabela `envio`
 --
 ALTER TABLE `envio`
   ADD KEY `fki_cod_usuario` (`cod_usuario`);
 
 --
--- Indexes for table `instituicao`
+-- Índices de tabela `instituicao`
 --
 ALTER TABLE `instituicao`
   ADD PRIMARY KEY (`id_inst`);
 
 --
--- Indexes for table `livros`
+-- Índices de tabela `livros`
 --
 ALTER TABLE `livros`
-  ADD PRIMARY KEY (`idlivro`);
+  ADD PRIMARY KEY (`Nome_insti`);
 
 --
--- Indexes for table `postagem`
+-- Índices de tabela `postagem`
 --
 ALTER TABLE `postagem`
   ADD PRIMARY KEY (`cod_post`),
@@ -185,22 +190,22 @@ ALTER TABLE `postagem`
   ADD KEY `fki_instituicao` (`cod_inst`);
 
 --
--- Indexes for table `usuario`
+-- Índices de tabela `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`iduser`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de tabelas apagadas
 --
 
 --
--- AUTO_INCREMENT for table `livros`
+-- AUTO_INCREMENT de tabela `livros`
 --
 ALTER TABLE `livros`
-  MODIFY `idlivro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `Nome_insti` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
--- AUTO_INCREMENT for table `usuario`
+-- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
   MODIFY `iduser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;

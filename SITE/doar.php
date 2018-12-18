@@ -14,9 +14,7 @@
 	<body>
 
 		<!-- Header -->
-      <?php include ("cabeçalho.html") ?>
-
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+      <?php include ("cabeçalhopi.php") ?>
 
 		<!-- Main -->
 			<section id="main">
@@ -181,7 +179,7 @@ return true;
     </tr>
   </table>
 </form>
-      <?php include ("rodape.html") ?>
+      <?php include ("rodape.php") ?>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

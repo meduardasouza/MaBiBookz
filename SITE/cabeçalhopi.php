@@ -9,9 +9,11 @@
 				<div class="inner">
 					<a href="index.php" class="logo">MaBiBookz</a>
 					<nav id="nav">
-			            <a href="login.php">Login</a>
+						<a href="home.php">Página Inicial</a>
+			            <a href="perfil.php">Perfil</a>
+			            <a href="info.php"> Nosso Objetivo</a>
+			            <a href="index.php">Sair</a>
 					</nav>
 				</div>
 			</header>
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 </html>

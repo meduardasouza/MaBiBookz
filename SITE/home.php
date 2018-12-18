@@ -14,9 +14,9 @@
 	<body>
 
 		<!-- Header -->
-      <?php include ("cabeçalho.html") ?>
+      <?php include ("cabeçalhopi.php") ?>
 
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+			
 
 		<!-- Main -->
 							
@@ -34,7 +34,7 @@
 
 		<!-- Footer -->
 
-     <?php include ("rodape.html") ?>
+     <?php include ("rodape.php") ?>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

@@ -14,9 +14,9 @@
 	<body>
 
 		<!-- Header -->
-      <?php include ("cabeçalhopi.html") ?>
+      <?php include ("cabeçalhopi.php") ?>
 
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+			
 
 		<!-- Main -->
 			<section id="main" >
@@ -25,8 +25,7 @@
 						<h1>O QUE DESEJAMOS </h1>
 					</header>
 					<!-- <img src="images/pic11.jpg" alt="" />  -->
-					<p> Nosso desejo, é que instituições, escolas, bibliotecas públicas e etc., possam receber doações de livros de forma mais fácil e 
-					prática. Além disso, é uma forma de "se livrar" de livros que você possa julgar não necessários mais.</p>
+					<p> Nosso desejo, é que instituições, escolas, bibliotecas públicas e etc., possam receber doações de livros de forma mais fácil e prática. Além disso, é uma forma de "se livrar" de livros que você possa julgar não necessários mais. Com o MaBiBookz, você poderá levar educação e ajudar outras pessoas a terem acesso à leitura, sem sair de casa.</p>
 					<p>Materiais como, livros didáticos, revistas, literaturas e etc., serão muito bem-vindos, já que toda forma de leitura é bem aceita.</p>
 					<p>Através desse site, os doadores poderão entrar em contato com as instituições e saber quais materiais estão sendo solicitados. Assim, 
 					não erram no material que vão enviar.</p>
@@ -34,7 +33,7 @@
 			</section>
 
 
-      <?php include ("rodape.html") ?>
+      <?php include ("rodape.php") ?>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

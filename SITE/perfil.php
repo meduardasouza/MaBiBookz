@@ -1,3 +1,20 @@
+<?php
+   header("Content-Type: text/html; charset=ISO-8859-1",true);
+   require_once("functions.php");
+   seguranca();
+   	$username = $_SESSION['user']['username'];
+   	$nome = $_SESSION['user']['nome'];
+   	$email = $_SESSION['user']['email'];
+	$cidade = $_SESSION['user']['cidade'];
+	$estado = $_SESSION['user']['estado'];
+	$bairro = $_SESSION['user']['bairro'];
+	$telefone = $_SESSION['user']['telefone'];
+	$email = $_SESSION['user']['email'];
+	$DDD = $_SESSION['user']['ddd'];
+
+   //ISSO DEVE ESTAR NO INICIO DE CADA PÁGINA QUE O USUÁRIO USAR APÓS O LOGIN
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Introspect by TEMPLATED
@@ -14,30 +31,41 @@
 	<body>
 
 		<!-- Header -->
-      <?php include ("cabeçalhoperfil.html") ?>
+      <?php include ("cabeçalhopi.php") ?>
 			<section>
 							<br>
 							<br>
 							<div class="circle">
+
 								<img src="images/perfil.jpg" width="150"  height="150">
 							</div>
+							<a href="edita.php" > editar dados </a>
 							<br>
-			<h2> Instituição das Criancinhas Carentes </h2>
+			<h2><?php echo $nome ?> </h2>
 	<div id="tabelinha">
 		<table width="625" border="0">
 		    <tr>
 		      <td width="69">Local:</td>
+<<<<<<< HEAD
 		      <td> Rua xxxxxxx. <br> RJ </br> Quissamã - Barra do Furado 70 </br> Brasil </td>
+=======
+		      <td><?php echo $cidade ?><br> <?php echo $estado ?> </br> <?php echo $bairro ?></td>
+>>>>>>> 616197f0f8892606a06bbdf476e5e54303542fa2
 		    </tr>
 		    <tr>
-		      <td width="69">Dados para contato:</td>
-		      <td> Telefone: (xx) xxxx-xxxx <br> Email: abcdefgh@semmerchan.com </td>
+		      <td width="100">Dados para contato:</td>
+		      <td> Telefone: <?php echo $DDD ?>   <?php echo $telefone ?> <br> Email: <?php echo $email ?> </td>
 		    </tr>
 		</table>
 	</div>
 
 	<h3> Lista de Desejos </h3>
+	<h5> <a href="cadastrolivro.php" > Clique para cadastrar um livro novo. </a> </h5>
 		<table width="625" border="0">
+
+			<tr>
+		      <td width="69">Livro:</td>
+		      <td> Rua xxxxxxx. </td>
 		    <tr>
 		      <td width="69">Dom Casmurro</td>
 		      <td> <a href="doardc.php" > Clique para doar. </a> </td>
@@ -45,11 +73,14 @@
 		    <tr>
 		      <td width="69"> A Garota no Trem</td>
 		      <td> <a href="doarag.php" > Clique para doar. </a> </td>
+
 		    </tr>
 		</table>
+	<h6> <a href="rastreio.php" > Clique aqui para saber onde estão seus livros cadastrados. </a> </h6>
+
 			</section>
 
-	        <?php include ("rodape.html") ?>
+	        <?php include ("rodape.php") ?>
       		<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
