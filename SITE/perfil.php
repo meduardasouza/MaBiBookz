@@ -27,7 +27,7 @@
 		<table width="625" border="0">
 		    <tr>
 		      <td width="69">Local:</td>
-		      <td> Rua xxxxxxx. <br> RJ </br> Quissamã - Barra do Furado 70 </td>
+		      <td> Rua xxxxxxx. <br> RJ </br> Quissamã - Barra do Furado 70 </br> Brasil </td>
 		    </tr>
 		    <tr>
 		      <td width="69">Dados para contato:</td>
